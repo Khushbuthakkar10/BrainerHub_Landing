@@ -19,7 +19,7 @@ export default function Footer() {
 
           {/* Copyright Section */}
           <div className="text-sm text-gray-500 font-medium">
-            © {currentYear} BrainerHub. All rights reserved.
+            © {currentYear} BarinerHub · Built for funded startups
           </div>
         </div>
       </div>

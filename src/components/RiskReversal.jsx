@@ -1,87 +1,110 @@
 import React from 'react';
-import { FileX, Users, Coins, ShieldCheck } from 'lucide-react';
+import { Lock, User, Shield, Zap } from 'lucide-react';
 
-const guarantees = [
+const riskFactors = [
   {
-    title: "No Long-Term Contracts",
-    description: "You’re never locked in. Continue only if you see real value.",
-    icon: FileX,
-    number: "01",
+    id: "01",
+    title: "Zero Lock-In",
+    description: "No retainers. No minimum terms. No \"you must use us for 3 months\" clauses. Each sprint is a standalone engagement — you decide if you want more.",
+    icon: Lock,
+    footer: [
+      { label: "Contract Length: ", value: "Sprint Only" },
+      { label: "Minimum Term: ", value: "None" }
+    ]
   },
   {
-    title: "No Hiring Commitments",
-    description: "No need to hire or manage extra resources—we handle everything.",
-    icon: Users,
-    number: "02",
+    id: "02",
+    title: "No Headcount Risk",
+    description: "You're not hiring anyone. No probation periods, no employment law exposure, no HR overhead. The pod deploys and disbands:  clean, simple, zero liability on your end.",
+    icon: User,
+    footer: [
+      { label: "Hiring Exposure:", value: "$0" },
+      { label: "HR Overhead:", value: "None" }
+    ]
   },
   {
-    title: "If We Don't Deliver, You Don't Pay",
-    description: "Simple. If we don't meet expectations, you owe nothing.",
-    icon: Coins,
-    number: "03",
+    id: "03",
+    title: "Delivery or Free",
+    description: "If we don't ship a production-ready feature by Day 14, the second 50% is waived. We keep working at zero cost until it’s done — no excuses, no renegotiation, ever.",
+    icon: Shield,
+    footer: [
+      { label: "Miss Deadline: We Work Free", value: "We Work Free" },
+      { label: "Your Max Exposure: 50% Only", value: "50% Max" }
+    ]
   },
   {
-    title: "Start Without Financial Risk",
-    description: "No upfront costs. Begin risk-free and scale with confidence.",
-    icon: ShieldCheck,
-    number: "04",
+    id: "04",
+    title: "Start Without Friction",
+    description: "From feasibility call to sprint kickoff, the process is designed to move fast without operational drag.",
+    icon: Zap,
+    footer: [
+      { label: "Sprint Start:", value: "3-5 Days" },
+      { label: "Meetings Required:", value: "Minimal" }
+    ]
   }
 ];
 
 export default function RiskReversal() {
   return (
-    <section className="relative z-10 my-24 md:my-36">
+    <section className="relative z-10 my-24 md:my-36" id="risk-reversal">
       <div className="section-container">
-
         {/* Header */}
-        <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/25 mb-5">
-            <span className="text-xs font-bold text-brand-400 tracking-widest uppercase">ZERO RISK</span>
+        <div className="text-left mb-10 relative">
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/20 mb-4">
+            <span className="text-xs font-bold text-brand-400 tracking-widest uppercase">Zero-Risk Start</span>
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
-            Zero-Risk <span className="text-brand-gradient">Start</span>
+          <h2 className="text-4xl md:text-5xl max-w-3xl font-extrabold tracking-tight text-white mb-3">
+            Every reason to move forward. <span className="text-brand-gradient">Zero reasons</span> to hesitate.
           </h2>
-          <p className="text-gray-500 text-basr max-w-2xl mx-auto leading-relaxed">
-            Start with confidence. No commitments, no pressure—just results.
+          <p className="text-gray-500 text-base max-w-2xl">
+            Our model is built to eliminate every possible objection. We absorb the risk so your team doesn’t have to.
           </p>
         </div>
 
-        {/* Cards grid */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {guarantees.map((item) => {
-            const Icon = item.icon;
+        {/* Grid */}
+        <div className="grid md:grid-cols-2 gap-6">
+          {riskFactors.map((factor) => {
+            const Icon = factor.icon;
             return (
               <div
-                key={item.number}
-                className="group relative rounded-3xl p-7 border border-white/10 bg-[#0f0f12] overflow-hidden hover:border-brand-500/30 transition-all duration-300 cursor-default"
+                key={factor.id}
+                className="group relative flex flex-col bg-[#0f1115] border border-[rgba(255,226,226,0.12)] rounded-3xl overflow-hidden hover:border-[rgba(255,107,107,0.4)] hover:shadow-[0_0_25px_rgba(255,107,107,0.3)] hover:bg-[#15181e] transition-all duration-300"
               >
-                {/* Hover glow */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none rounded-3xl"
-                  style={{ background: 'radial-gradient(circle at top left, rgba(191,66,82,0.1) 0%, transparent 65%)' }}
-                />
+                {/* Card Body */}
+                <div className="p-6 pb-8">
+                  <div className="flex justify-between items-start mb-10">
+                    <div className="w-11 h-11 rounded-xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center shrink-0 group-hover:bg-brand-500/20 group-hover:border-brand-500/40 group-hover:scale-110 transition-all duration-300">
+                      <Icon className="w-5 h-5 text-brand-400" />
+                    </div>
+                    <div className="flex items-center gap-1.5 px-3 py-1 rounded-full bg-brand-500/10 border border-brand-500/25">
+                      <div className="w-1.5 h-1.5 rounded-full bg-brand-400 animate-pulse shrink-0" />
+                      <span className="text-[10px] font-bold text-brand-400 tracking-widest uppercase whitespace-nowrap">
+                        GUARD-{factor.id} • PROTECTED
+                      </span>
+                    </div>
+                  </div>
 
-                {/* Gradient top border on hover */}
-                <div className="absolute top-0 left-0 right-0 h-[2px] w-0 mx-auto bg-brand-gradient opacity-0 group-hover:opacity-100 group-hover:w-full transition-all duration-300" />
-
-                {/* Number watermark */}
-                <span className="absolute top-5 right-6 text-5xl font-black text-white/10 select-none group-hover:text-white/6 transition-colors duration-300">
-                  {item.number}
-                </span>
-
-                {/* Icon */}
-                <div className="relative z-10 w-12 h-12 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-brand-500/15 transition-all duration-300">
-                  <Icon className="w-5 h-5 text-brand-400" />
+                  <h3 className="text-lg md:text-xl font-bold text-white mb-3 tracking-tight italic leading-tight">
+                    {factor.title}
+                  </h3>
+                  <p className="text-gray-500 leading-relaxed text-sm group-hover:text-gray-400 transition-colors duration-300">
+                    {factor.description}
+                  </p>
                 </div>
 
-                {/* Title */}
-                <h3 className="relative z-10 text-lg font-bold text-white mb-3 tracking-tight">
-                  {item.title}
-                </h3>
-
-                {/* Description */}
-                <p className="relative z-10 text-sm text-gray-500 leading-relaxed">
-                  {item.description}
-                </p>
+                {/* Card Footer */}
+                <div className="grid grid-cols-2 border-t border-[rgba(255,226,226,0.12)]">
+                  {factor.footer.map((stat, i) => (
+                    <div key={i} className={`px-6 py-5 flex flex-col gap-1 ${i === 0 ? 'border-r border-[rgba(255,226,226,0.12)]' : ''}`}>
+                      <span className="text-[10px] font-bold text-gray-600 tracking-widest uppercase">
+                        {stat.label}
+                      </span>
+                      <div className="text-sm md:text-base font-medium text-white tracking-tight leading-tight">
+                        {stat.value}
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
             );
           })}
