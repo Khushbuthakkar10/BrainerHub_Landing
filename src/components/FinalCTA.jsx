@@ -27,7 +27,7 @@ export default function FinalCTA() {
               Don't let your roadmap accumulate technical debt while the competition ships. Initialise your 14-day sprint and have a live AI feature before your next board update.
             </p>
 
-            <button className="btn-primary group">
+            <button className="btn-primary group px-5 md:px-8">
               <span>Book Your Sprint Feasibility Call</span>
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>

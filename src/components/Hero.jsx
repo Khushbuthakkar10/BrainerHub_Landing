@@ -41,7 +41,7 @@ export default function Hero() {
             <p className="text-lg text-gray-400 leading-relaxed max-w-xl">Startups rarely struggle because of ideas. Execution is usually the bottleneck. We deploy a focused AI sprint pod that ships production-ready features in 14 days without long hiring cycles or additional operational burn.</p>
 
             <div className="flex flex-wrap gap-5 items-center pt-4">
-              <button className="btn-primary group">
+              <button className="btn-primary group px-5 md:px-8">
                 <span>Book Your Sprint Feasibility Call</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
