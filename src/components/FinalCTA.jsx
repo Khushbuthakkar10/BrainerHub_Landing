@@ -60,7 +60,7 @@ export default function FinalCTA() {
 
             <div className="relative z-10 p-6 md:p-8">
               {/* Header Status */}
-              <div className="flex items-center justify-between mb-8">
+              <div className="flex items-center justify-between gap-2.5 flex-wrap mb-8">
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
                   <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Operational — slots open</span>
