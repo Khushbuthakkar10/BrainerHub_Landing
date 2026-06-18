@@ -2,6 +2,12 @@ import React from 'react';
 import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 export default function FinalCTA() {
+
+  const currentDate = new Date();
+
+  const month = currentDate.toLocaleString('en-US', { month: 'long' });
+  const year = currentDate.getFullYear();
+
   return (
     <section className="relative z-10 overflow-hidden my-24 md:my-36" id="cta">
       {/* Dynamic Background Glows */}
@@ -23,11 +29,13 @@ export default function FinalCTA() {
               <span className="text-brand-gradient italic">We help you ship it.</span>
             </h2>
 
-            <p className="text-gray-500 text-base mb-8">
+            <p className="text-gray-400 text-base mb-8">
               Don't let your roadmap accumulate technical debt while the competition ships. Initialise your 14-day sprint and have a live AI feature before your next board update.
             </p>
 
-            <button className="btn-primary group px-5 md:px-8">
+            <button className="btn-primary group px-5 md:px-8" onClick={() =>
+              window.open("https://cal.com/aadi-raj-sinh-tmtqkm/30min", "_blank")
+            }>
               <span>Book Your Sprint Feasibility Call</span>
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>
@@ -36,15 +44,15 @@ export default function FinalCTA() {
             <div className="grid grid-cols-3 gap-5 md:gap-8 pt-7 border-t border-white/10 mt-8 max-w-xl">
               <div>
                 <div className="text-2xl md:text-3xl font-black text-white tracking-tighter italic">14d</div>
-                <div className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">Sprint cycle</div>
+                <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">Sprint cycle</div>
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-black text-white tracking-tighter italic">100% </div>
-                <div className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">IP ownership</div>
+                <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">IP ownership</div>
               </div>
               <div>
                 <div className="text-2xl md:text-3xl font-black text-white tracking-tighter italic">$0 </div>
-                <div className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mt-1">If we don't ship</div>
+                <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mt-1">If we don't ship</div>
               </div>
             </div>
           </div>
@@ -63,13 +71,13 @@ export default function FinalCTA() {
               <div className="flex items-center justify-between gap-2.5 flex-wrap mb-8">
                 <div className="flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20">
                   <div className="w-1.5 h-1.5 rounded-full bg-emerald-500" />
-                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Operational — slots open</span>
+                  <span className="text-[10px] font-bold text-emerald-400 uppercase tracking-wider">Operational - slots open</span>
                 </div>
-                <span className="text-[10px] font-medium text-gray-600 uppercase tracking-widest">Week of May 2026</span>
+                <span className="text-[10px] font-medium text-gray-400 uppercase tracking-widest">Week of {month} {year}</span>
               </div>
 
               <h3 className="text-2xl md:text-3xl font-extrabold text-white tracking-tight mb-2">Initialise Your Cycle.</h3>
-              <p className="text-sm text-gray-500 mb-8">Next sprint window opens in 48 hours.</p>
+              <p className="text-sm text-gray-400 mb-8">Next sprint window opens in 48 hours.</p>
 
               {/* Capacity Counter */}
               <div className="bg-white/5 rounded-2xl p-4 mb-4 border border-white/5">
@@ -82,28 +90,30 @@ export default function FinalCTA() {
                 <div className="flex gap-1.5 mb-4">
                   <div className="h-1.5 flex-1 rounded-full bg-brand-500" />
                   <div className="h-1.5 flex-1 rounded-full bg-emerald-500" />
-                  <div className="h-1.5 flex-1 rounded-full bg-white/5" />
-                  <div className="h-1.5 flex-1 rounded-full bg-white/5" />
+                  <div className="h-1.5 flex-1 rounded-full bg-white/10" />
+                  <div className="h-1.5 flex-1 rounded-full bg-white/10" />
                 </div>
 
                 <div className="flex items-center gap-6">
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-brand-500" />
-                    <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">1 slot filled</span>
+                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">1 slot filled</span>
                   </div>
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 rounded-full bg-emerald-500" />
-                    <span className="text-[10px] font-bold text-gray-500 uppercase tracking-wider">1 slot remaining</span>
+                    <span className="text-[10px] font-bold text-gray-400 uppercase tracking-wider">1 slot remaining</span>
                   </div>
                 </div>
               </div>
 
-              <button className="btn-primary w-full text-base py-3 px-5 group/btn">
+              <button className="btn-primary w-full text-base py-3 px-5 group/btn" onClick={() =>
+                window.open("https://cal.com/aadi-raj-sinh-tmtqkm/30min", "_blank")
+              }>
                 <span>Secure Your Slot </span>
                 <ArrowRight className="w-5 h-5 group-hover/btn2:translate-x-1 transition-transform" />
               </button>
 
-              <div className="flex items-center justify-center gap-2 text-gray-600 mt-8">
+              <div className="flex items-center justify-center gap-2 text-gray-400 mt-8">
                 <CheckCircle2 className="w-3.5 h-3.5" />
                 <span className="text-[11px] font-medium tracking-wide uppercase">No commitment on the call. 30 minutes.</span>
               </div>

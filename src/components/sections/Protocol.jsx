@@ -22,7 +22,7 @@ const steps = [
     number: '03',
     days: 'DAYS 4-11',
     title: 'High-Density Build',
-    content: 'The pod ships in daily async cycles. You get staging access from Day 5, async Loom updates every 2 days — full visibility, zero micromanagement required.',
+    content: 'The pod ships in daily async cycles. You get staging access from Day 5, async Loom updates every 2 days - full visibility, zero micromanagement required.',
     badges: ['Daily Standups', 'Staging Access', 'AI Build'],
     accent: 'bg-brand-500/20 text-brand-400 border-brand-500/30'
   },
@@ -51,7 +51,7 @@ export default function Protocol() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
             Precision engineering. <span className="text-brand-gradient">14 days</span>, every time.
           </h2>
-          <p className="text-gray-500 text-base max-w-3xl">
+          <p className="text-gray-400 text-base max-w-3xl">
             We removed the parts of traditional agency delivery that usually slow execution down: excessive meetings, scope creep, and onboarding overhead. What remains is a focused delivery system built for speed.
           </p>
         </div>
@@ -81,7 +81,7 @@ export default function Protocol() {
               <h3 className="text-xl font-bold text-white mb-4 tracking-tight">
                 {step.title}
               </h3>
-              <p className="text-sm text-gray-500 leading-relaxed mb-8 flex-1">
+              <p className="text-sm text-gray-400 leading-relaxed mb-8 flex-1">
                 {step.content}
               </p>
 
@@ -105,7 +105,9 @@ export default function Protocol() {
 
         {/* Bottom CTA Area */}
         <div className="mt-12 pt-10 border-t border-[rgba(255,226,226,0.10)] text-center">
-          <button className="btn-primary text-base py-3 px-5 group/btn w-full sm:w-auto">
+          <button className="btn-primary text-base py-3 px-5 group/btn w-full sm:w-auto" onClick={() =>
+            window.open("https://cal.com/aadi-raj-sinh-tmtqkm/30min", "_blank")
+          }>
             <span>Initialise Your Sprint</span>
             <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
           </button>

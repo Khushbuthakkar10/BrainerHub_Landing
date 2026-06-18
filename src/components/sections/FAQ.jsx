@@ -4,7 +4,7 @@ import { Plus, Minus, HelpCircle } from 'lucide-react';
 const faqs = [
   {
     question: "How is a 14-day delivery physically possible?",
-    answer: "We work with tightly defined priorities from the start. Before we start, we lock scope to exactly one production-ready AI feature — no scope creep, no “while we're at it.” We use a pre-built integration library for common AI patterns (LLM calls, embeddings, vector search) so the pod focuses 100% on your unique business logic. Daily async cycles keep momentum without meetings eating your time."
+    answer: "We work with tightly defined priorities from the start. Before we start, we lock scope to exactly one production-ready AI feature - no scope creep, no “while we're at it.” We use a pre-built integration library for common AI patterns (LLM calls, embeddings, vector search) so the pod focuses 100% on your unique business logic. Daily async cycles keep momentum without meetings eating your time."
   },
   {
     question: "What if you don't deliver in 14 days?",
@@ -42,7 +42,7 @@ export default function FAQ() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-6">
             Verified <span className="text-brand-gradient">Answers.</span>
           </h2>
-          <p className="text-gray-500 text-lg leading-relaxed">
+          <p className="text-gray-400 text-lg leading-relaxed">
             High-velocity engineering requires full transparency. Here's exactly how our model works.
           </p>
         </div>
@@ -61,7 +61,7 @@ export default function FAQ() {
               >
                 {/* <div className={`mt-1 w-10 h-10 rounded-xl flex items-center justify-center border transition-all duration-300 shrink-0 ${openIndex === idx
                   ? 'bg-brand-500/10 border-brand-500/30 text-brand-400'
-                  : 'bg-white/5 border-white/10 text-gray-600 group-hover:border-white/20'
+                  : 'bg-white/5 border-white/10 text-gray-400 group-hover:border-white/20'
                   }`}>
                   <span className="text-xs font-mono font-bold">{(idx + 1).toString().padStart(2, '0')}</span>
                 </div> */}
@@ -77,7 +77,7 @@ export default function FAQ() {
                   {openIndex === idx ? (
                     <Minus className="w-6 h-6 text-brand-400" />
                   ) : (
-                    <Plus className="w-6 h-6 text-gray-600 group-hover:text-gray-400" />
+                    <Plus className="w-6 h-6 text-gray-400 group-hover:text-gray-400" />
                   )}
                 </div>
               </button>
@@ -85,7 +85,7 @@ export default function FAQ() {
                 className={`transition-all duration-500 ease-in-out overflow-hidden ${openIndex === idx ? 'max-h-[500px] opacity-100 mt-6' : 'max-h-0 opacity-0'
                   }`}
               >
-                <p className="text-gray-500 text-sm md:text-base leading-relaxed">
+                <p className="text-gray-400 px-4 text-sm md:text-base leading-relaxed">
                   {faq.answer}
                 </p>
               </div>

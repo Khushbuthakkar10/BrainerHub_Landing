@@ -33,10 +33,10 @@ export default function Problem() {
       icon: <Gauge className="w-5 h-5 text-brand-400" />,
       sysId: 'SYS-L03',
       title: 'Velocity Drag',
-      text: 'Recruiting an in-house AI team requires 3+ months of lead time and £200k+ in annual overhead before the first feature ships.',
+      text: 'Recruiting an in-house AI team requires 3+ months of lead time and $200k+ in annual overhead before the first feature ships.',
       stats: [
         { label: 'Velocity Loss:', value: 'Months' },
-        { label: 'Annual Overhead:', value: '£200k+' },
+        { label: 'Annual Overhead:', value: '$200k+' },
       ],
       glow: 'rgba(191,66,82,0.22)',
       shimmer: 'from-brand-500/15',
@@ -68,7 +68,7 @@ export default function Problem() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
             After raising, <span className="text-brand-gradient">most teams hit</span> the same wall:
           </h2>
-          <p className="text-gray-500 text-base max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base max-w-2xl mx-auto">
             We've studied 100+ stalled AI initiatives to understand exactly where execution breaks down. The pattern is always the same.
           </p>
         </div>
@@ -105,7 +105,7 @@ export default function Problem() {
                 <h3 className="text-xl md:text-2xl font-bold text-white mb-3 tracking-tight italic leading-tight">
                   {problem.title}
                 </h3>
-                <p className="text-gray-500 leading-relaxed text-sm group-hover:text-gray-400 transition-colors duration-300">
+                <p className="text-gray-400 leading-relaxed text-sm group-hover:text-gray-400 transition-colors duration-300">
                   {problem.text}
                 </p>
               </div>
@@ -117,7 +117,7 @@ export default function Problem() {
                     key={si}
                     className={`px-6 py-5 flex flex-col gap-1 ${si === 0 ? 'border-r border-[rgba(255,226,226,0.12)]' : ''}`}
                   >
-                    <span className="text-[10px] font-bold text-gray-600 tracking-widest uppercase">
+                    <span className="text-[10px] font-bold text-gray-400 tracking-widest uppercase">
                       {stat.label}
                     </span>
                     <span className="text-sm md:text-base font-medium text-white tracking-tight leading-tight">

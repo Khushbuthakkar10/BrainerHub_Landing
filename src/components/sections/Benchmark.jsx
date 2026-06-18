@@ -10,7 +10,7 @@ export default function Benchmark() {
     subtitle: "Hiring cycles don't just drain capital, they drain momentum. Here's what 180+ days of delay actually costs a funded startup.",
     left: {
       label: 'Traditional Hiring Route:',
-      value: '180+',
+      value: '100+',
       subtext: 'Days before your AI feature ships',
       items: [
         '2-3 months recruiting pipeline',
@@ -81,7 +81,7 @@ export default function Benchmark() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
             {data.title}
           </h2>
-          <p className="text-gray-500 text-base max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base max-w-2xl mx-auto">
             {data.subtitle}
           </p>
 
@@ -111,7 +111,7 @@ export default function Benchmark() {
         <div className="grid grid-cols-1 lg:grid-cols-[1fr,auto,1fr] items-center gap-8 lg:gap-0">
           {/* Left Card - Traditional */}
           <div className="glass-card rounded-3xl p-7 lg:p-10 border-white/10 bg-white/[0.02]">
-            <span className="text-xs md:text-sm font-extrabold tracking-[0.2em] text-gray-500 uppercase block mb-8">
+            <span className="text-xs md:text-sm font-extrabold tracking-[0.2em] text-gray-400 uppercase block mb-8">
               {data.left.label}
             </span>
 
@@ -142,7 +142,7 @@ export default function Benchmark() {
           <div className="flex flex-col items-center justify-center px-4 lg:z-20">
             <div className="w-px h-12 lg:h-24 bg-gradient-to-b from-transparent via-white/20 to-transparent"></div>
             <div className="w-12 h-12 rounded-full border border-white/20 bg-dark-900 flex items-center justify-center shadow-2xl relative">
-              <span className="text-[10px] font-black text-gray-500 tracking-widest italic">VS</span>
+              <span className="text-[10px] font-black text-gray-400 tracking-widest italic">VS</span>
               {/* Outer Pulse */}
               <div className="absolute inset-0 rounded-full bg-brand-500/30 animate-ping opacity-20"></div>
             </div>

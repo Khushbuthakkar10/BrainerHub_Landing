@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/brainerhub_logo_dark.png';
+import logo from '../../assets/brainerhub_logo_dark.png';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -18,7 +18,7 @@ export default function Footer() {
           </div>
 
           {/* Copyright Section */}
-          <div className="text-sm text-gray-500 font-medium">
+          <div className="text-sm text-gray-400 font-medium">
             © {currentYear} BarinerHub · Built for funded startups
           </div>
         </div>

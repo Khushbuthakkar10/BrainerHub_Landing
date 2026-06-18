@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Play, Zap, ShieldCheck, Cpu, Activity, Clock, Check } from 'lucide-react';
-import brainerIcon from '../assets/BrainerHub-Light-Icon.png';
+import brainerIcon from '../../assets/BrainerHub-Light-Icon.png';
 
 export default function Hero() {
   const [rotation, setRotation] = React.useState(0);
@@ -35,20 +35,22 @@ export default function Hero() {
             </div>
 
             <h1 className="text-4xl md:text-[56px] font-extrabold tracking-tight md:!leading-[70px] text-white">
-              Ship AI Features in <span className="text-brand-gradient">14 Days</span>. Not 14 Months.
+              Ship AI Features in <span className="text-brand-gradient">14 Days</span>. Not 14 weeks.
             </h1>
 
             <p className="text-lg text-gray-400 leading-relaxed max-w-xl">Startups rarely struggle because of ideas. Execution is usually the bottleneck. We deploy a focused AI sprint pod that ships production-ready features in 14 days without long hiring cycles or additional operational burn.</p>
 
             <div className="flex flex-wrap gap-5 items-center pt-4">
-              <button className="btn-primary group px-5 md:px-8">
+              <button className="btn-primary group px-5 md:px-8" onClick={() =>
+                window.open("https://cal.com/aadi-raj-sinh-tmtqkm/30min", "_blank")
+              }>
                 <span>Book Your Sprint Feasibility Call</span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
               </button>
             </div>
 
             <div className="flex items-center gap-4 pt-6">
-              <p className="text-sm text-gray-500 font-medium tracking-wide">
+              <p className="text-sm text-gray-400 font-medium tracking-wide">
                 • No hiring delays
                 • Fixed pricing
                 • Delivery guaranteed
@@ -169,7 +171,7 @@ export default function Hero() {
                   pos: 'left',
                   angle: 180,
                   status: 'UPCOMING',
-                  statusColor: 'text-gray-500',
+                  statusColor: 'text-gray-400',
                   bgColor: 'bg-white/5',
                   borderColor: 'border-white/10',
                   title: 'QA, staging & production deploy',
@@ -231,7 +233,7 @@ export default function Hero() {
 
                             {node.active && (
                               <div className="mt-2.5 pt-2.5 border-t border-white/5 flex items-center justify-between">
-                                <span className="text-[9px] text-gray-500 font-medium tracking-wide uppercase">PHASE {idx + 1}</span>
+                                <span className="text-[9px] text-gray-400 font-medium tracking-wide uppercase">PHASE {idx + 1}</span>
                                 <Zap className="w-2.5 h-2.5 text-brand-400 fill-brand-400 opacity-50" />
                               </div>
                             )}

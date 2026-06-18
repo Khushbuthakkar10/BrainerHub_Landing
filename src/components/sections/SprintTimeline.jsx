@@ -9,23 +9,23 @@ const timeline = [
     progressColor: "from-brand-500 to-orange-500",
     percentageColor: "text-brand-400",
     phases: [
-      { label: "Day 0 — Discovery call", status: "complete" },
-      { label: "Days 1-3 — Architecture locked", status: "complete" },
-      { label: "Days 4-7 — Build sprint begins", status: "active" },
+      { label: "Day 0 - Discovery call", status: "complete" },
+      { label: "Days 1-3 - Architecture locked", status: "complete" },
+      { label: "Days 4-7 - Build sprint begins", status: "active" },
       { label: "Staging env live", status: "future" }
     ]
   },
   {
-    week: "Week 2 — Days 8-14",
+    week: "Week 2 - Days 8-14",
     milestones: "High-Density Build · QA · Production Deploy",
     progress: 100,
     progressColor: "from-emerald-500 to-emerald-400",
     percentageColor: "text-emerald-400",
     phases: [
-      { label: "Days 8-11 — Feature hardened", status: "active" },
-      { label: "Days 12-13 — QA & testing", status: "active" },
-      { label: "Day 14 — Production deploy", status: "complete" },
-      { label: "Day 14 — Full IP handover", status: "complete" }
+      { label: "Days 8-11 - Feature hardened", status: "active" },
+      { label: "Days 12-13 - QA & testing", status: "active" },
+      { label: "Day 14 - Production deploy", status: "complete" },
+      { label: "Day 14 - Full IP handover", status: "complete" }
     ]
   }
 ];
@@ -47,7 +47,7 @@ export default function SprintTimeline() {
 
           <div className="flex flex-col items-end shrink-0">
             <div className="text-xl md:text-2xl font-extrabold text-white tracking-tight">14d </div>
-            <div className="text-[10px] font-bold text-gray-600 uppercase tracking-widest">Total cycle limit</div>
+            <div className="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Total cycle limit</div>
           </div>
         </div>
 
@@ -61,7 +61,7 @@ export default function SprintTimeline() {
                   {item.week}
                 </h3>
                 <div className="flex items-center gap-4">
-                  <span className="hidden md:block text-[10px] font-bold text-gray-600 uppercase tracking-widest">
+                  <span className="hidden md:block text-[10px] font-bold text-gray-400 uppercase tracking-widest">
                     {item.milestones}
                   </span>
                   <span className={`text-lg font-extrabold tracking-tight ${item.percentageColor}`}>
@@ -90,7 +90,7 @@ export default function SprintTimeline() {
                   } else if (phase.status === "active") {
                     styles = "bg-brand-500/10 border-brand-500/30 text-brand-400";
                   } else {
-                    styles = "bg-white/5 border-white/10 text-gray-500";
+                    styles = "bg-white/5 border-white/10 text-gray-400";
                   }
 
                   return (
@@ -109,11 +109,13 @@ export default function SprintTimeline() {
 
         {/* Footer Area */}
         <div className="mt-10 text-center md:text-left flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-gray-500 text-sm max-w-lg leading-relaxed">
+          <p className="text-gray-400 text-sm max-w-lg leading-relaxed">
             Sprint is scoped to one production-ready AI feature. Additional features move into a 30-Day Velocity Sprint or Dedicated Pod.
           </p>
 
-          <button className="btn-primary group py-3 px-8 rounded-xl flex items-center gap-3 transition-all duration-300">
+          <button className="btn-primary group py-3 px-8 rounded-xl flex items-center gap-3 transition-all duration-300" onClick={() =>
+            window.open("https://cal.com/aadi-raj-sinh-tmtqkm/30min", "_blank")
+          }>
             <span className="text-base font-bold">Initialise Sprint </span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>

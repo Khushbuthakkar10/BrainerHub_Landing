@@ -5,7 +5,7 @@ const riskFactors = [
   {
     id: "01",
     title: "Zero Lock-In",
-    description: "No retainers. No minimum terms. No \"you must use us for 3 months\" clauses. Each sprint is a standalone engagement — you decide if you want more.",
+    description: "No retainers. No minimum terms. No \"you must use us for 3 months\" clauses. Each sprint is a standalone engagement - you decide if you want more.",
     icon: Lock,
     footer: [
       { label: "Contract Length: ", value: "Sprint Only" },
@@ -25,7 +25,7 @@ const riskFactors = [
   {
     id: "03",
     title: "Delivery or Free",
-    description: "If we don't ship a production-ready feature by Day 14, the second 50% is waived. We keep working at zero cost until it’s done — no excuses, no renegotiation, ever.",
+    description: "If we don't ship a production-ready feature by Day 14, the second 50% is waived. We keep working at zero cost until it’s done - no excuses, no renegotiation, ever.",
     icon: Shield,
     footer: [
       { label: "Miss Deadline: We Work Free", value: "We Work Free" },
@@ -56,7 +56,7 @@ export default function RiskReversal() {
           <h2 className="text-4xl md:text-5xl max-w-3xl font-extrabold tracking-tight text-white mb-3">
             Every reason to move forward. <span className="text-brand-gradient">Zero reasons</span> to hesitate.
           </h2>
-          <p className="text-gray-500 text-base max-w-2xl">
+          <p className="text-gray-400 text-base max-w-2xl">
             Our model is built to eliminate every possible objection. We absorb the risk so your team doesn’t have to.
           </p>
         </div>
@@ -87,7 +87,7 @@ export default function RiskReversal() {
                   <h3 className="text-lg md:text-xl font-bold text-white mb-3 tracking-tight italic leading-tight">
                     {factor.title}
                   </h3>
-                  <p className="text-gray-500 leading-relaxed text-sm group-hover:text-gray-400 transition-colors duration-300">
+                  <p className="text-gray-400 leading-relaxed text-sm group-hover:text-gray-400 transition-colors duration-300">
                     {factor.description}
                   </p>
                 </div>
@@ -96,7 +96,7 @@ export default function RiskReversal() {
                 <div className="grid grid-cols-2 border-t border-[rgba(255,226,226,0.12)]">
                   {factor.footer.map((stat, i) => (
                     <div key={i} className={`px-6 py-5 flex flex-col gap-1 ${i === 0 ? 'border-r border-[rgba(255,226,226,0.12)]' : ''}`}>
-                      <span className="text-[10px] font-bold text-gray-600 tracking-widest uppercase">
+                      <span className="text-[10px] font-bold text-gray-400 tracking-widest uppercase">
                         {stat.label}
                       </span>
                       <div className="text-sm md:text-base font-medium text-white tracking-tight leading-tight">

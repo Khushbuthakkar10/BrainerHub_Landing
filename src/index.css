@@ -53,6 +53,11 @@
     box-shadow: 0 15px 50px -12px rgba(227, 39, 98, 0.6);
   }
 
+  select.input-style option {
+    background: #000;
+    color: #fff;
+  }
+
   .btn-ghost {
     @apply inline-flex items-center justify-center px-8 py-4 text-base font-bold rounded-xl text-white transition-all duration-300 border border-white/10 bg-white/5 hover:bg-white/10 backdrop-blur-md;
   }
@@ -200,4 +205,8 @@
 
 .animate-counter-orbit {
   animation: counter-orbit 60s linear infinite;
+}
+
+.input-style {
+  @apply w-full text-sm md:text-base bg-white/[0.03] border border-white/10 rounded-2xl px-5 py-4 text-white outline-none focus:border-orange-500;
 }

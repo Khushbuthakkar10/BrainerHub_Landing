@@ -49,7 +49,7 @@ export default function Day14Deliverables() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
             What you get on <span className="text-brand-gradient">Day 14.</span>
           </h2>
-          <p className="text-gray-500 text-base max-w-2xl mx-auto">
+          <p className="text-gray-400 text-base max-w-2xl mx-auto">
             Every sprint ends with a complete, production-ready AI feature and a full handoff. Here's exactly what ships.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function Day14Deliverables() {
                   <div className="w-14 h-14 rounded-2xl bg-brand-500/10 border border-brand-500/20 flex items-center justify-center group-hover:scale-110 group-hover:bg-brand-500/20 transition-all duration-300 shadow-brand-glow/0 group-hover:shadow-brand-glow">
                     <Icon className="w-7 h-7 text-brand-400" />
                   </div>
-                  <span className="text-[10px] font-bold text-gray-600 tracking-[0.3em] uppercase mt-2">
+                  <span className="text-[10px] font-bold text-gray-400 tracking-[0.3em] uppercase mt-2">
                     DEL-{item.id}
                   </span>
                 </div>
@@ -84,7 +84,7 @@ export default function Day14Deliverables() {
                   <h3 className="text-xl font-bold text-white mb-4 tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="text-sm text-gray-500 leading-relaxed mb-0 flex-1 group-hover:text-gray-400 transition-colors duration-300">
+                  <p className="text-sm text-gray-400 leading-relaxed mb-0 flex-1 group-hover:text-gray-400 transition-colors duration-300">
                     {item.description}
                   </p>
                 </div>

@@ -45,7 +45,7 @@ export default function CoreOffer() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
             Our most popular <span className="text-brand-gradient">engagement</span>
           </h2>
-          <p className="text-gray-500 text-base max-w-3xl mx-auto">
+          <p className="text-gray-400 text-base max-w-3xl mx-auto">
             Everything required to ship a production AI feature in one focused sprint.
           </p>
         </div>
@@ -80,7 +80,7 @@ export default function CoreOffer() {
                     </div>
                   </div>
                   <h4 className="text-lg font-bold text-white mb-2 tracking-tight">{f.title}</h4>
-                  <p className="text-sm text-gray-500 leading-relaxed font-medium">{f.desc}</p>
+                  <p className="text-sm text-gray-400 leading-relaxed font-medium">{f.desc}</p>
                 </div>
               ))}
             </div>
@@ -100,7 +100,9 @@ export default function CoreOffer() {
 
             {/* CTA Button */}
             <div className="text-center">
-              <button className="btn-primary text-base py-3 px-5 group/btn w-full sm:w-auto">
+              <button className="btn-primary text-base py-3 px-5 group/btn w-full sm:w-auto" onClick={() =>
+                window.open("https://cal.com/aadi-raj-sinh-tmtqkm/30min", "_blank")
+              }>
                 <span>Book Your Sprint Call </span>
                 <ArrowRight className="w-5 h-5 ml-2 group-hover/btn:translate-x-1 transition-transform" />
               </button>

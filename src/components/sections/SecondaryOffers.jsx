@@ -35,7 +35,7 @@ export default function SecondaryOffers() {
           <h2 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white mb-3">
             50/50. Balanced Risk. <span className="text-brand-gradient">Full Accountability.</span>
           </h2>
-          <p className="text-gray-500 text-base max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-400 text-base max-w-3xl mx-auto leading-relaxed">
             We don't believe startups should carry all the delivery risk upfront. Our model is built on shared risk and full accountability: you pay half to start, half only when we deliver.
           </p>
         </div>
@@ -60,7 +60,7 @@ export default function SecondaryOffers() {
                   </div>
                   <div>
                     <p className={`text-base font-bold tracking-widest uppercase ${idx == 0 ? 'text-brand-400' : 'text-emerald-400'}`}>{offer.subTitle}</p>
-                    <h3 className="text-gray-500 text-sm">
+                    <h3 className="text-gray-400 text-sm">
                       {offer.title}
                     </h3>
                   </div>
@@ -71,7 +71,7 @@ export default function SecondaryOffers() {
                     {offer.price}
                   </p>
 
-                  <p className="text-gray-500 text-sm leading-relaxed">
+                  <p className="text-gray-400 text-sm leading-relaxed">
                     {offer.description}
                   </p>
 
