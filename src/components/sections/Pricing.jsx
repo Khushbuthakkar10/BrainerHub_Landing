@@ -92,7 +92,8 @@ export default function Pricing() {
           budget: formData.budget,
           startDate: formData.startDate,
           message: formData.message,
-          to_email: "aditya@brainerhub.com"
+          to_email: "aditya@brainerhub.com",
+          time: new Date().toLocaleString()
         },
         "d4EdVtDh0pwET-Qi_"
       );
